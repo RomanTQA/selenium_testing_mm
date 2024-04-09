@@ -18,11 +18,18 @@ import static java.lang.Thread.sleep;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.TestMethodOrder;
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class PositiveBuyFlowTest extends TestConfig {
 
 
 
     @Test
+    @org.junit.jupiter.api.Order(1)
     @DisplayName("Просто положить что-то в корзину")
     public void buySomething()  {
         CatalogCard tradeCard = new CatalogCard();
@@ -38,6 +45,7 @@ public class PositiveBuyFlowTest extends TestConfig {
     }
 
     @Test
+    @org.junit.jupiter.api.Order(2)
     @DisplayName("Положить хрень в корзину и открыть корзину")
     public void buyAndGoToModalCart (){
         CatalogCard tradeCard = new CatalogCard();
@@ -51,6 +59,7 @@ public class PositiveBuyFlowTest extends TestConfig {
         );
     }
     @Test
+    @org.junit.jupiter.api.Order(3)
     @DisplayName("Попасть в основную корзину из модальной корзины")
     public void buyAndGoToBaseCart (){
         CatalogCard tradeCard = new CatalogCard();
@@ -71,6 +80,7 @@ public class PositiveBuyFlowTest extends TestConfig {
     }
 
     @Test
+    @org.junit.jupiter.api.Order(4)
     @DisplayName("Попасть на страницу оформления ордера")
     public void goToOrderPage (){
         CatalogCard tradeCard = new CatalogCard();
@@ -84,6 +94,7 @@ public class PositiveBuyFlowTest extends TestConfig {
 
     }
     @Test
+    @org.junit.jupiter.api.Order(5)
     @DisplayName("Попробовать заполнить ордер рандомной инфой")
     public void fillTheOrderRND (){
 
@@ -99,6 +110,7 @@ public class PositiveBuyFlowTest extends TestConfig {
 
     }
     @Test
+    @org.junit.jupiter.api.Order(6)
     @DisplayName("Сделать заказ- оформить ордер")
     public void makeFullOrder (){
 
@@ -117,6 +129,7 @@ public class PositiveBuyFlowTest extends TestConfig {
 
     }
     @Test
+    @org.junit.jupiter.api.Order(7)
     @DisplayName("Можно положить товар в корзину из 'Популярных' на главной странице")
     public void mainPagePopularAddToCart(){
         MainPage mainPage = new MainPage();
@@ -133,6 +146,7 @@ public class PositiveBuyFlowTest extends TestConfig {
     }
 
     @Test
+    @org.junit.jupiter.api.Order(8)
     @DisplayName("Можно положить товар в корзину из модалки 'Быстрого Просмотра' ")
     public void modalFastViewAddToCart(){
         MainPage mainPage = new MainPage();
@@ -149,6 +163,7 @@ public class PositiveBuyFlowTest extends TestConfig {
 
     }
     @Test
+    @org.junit.jupiter.api.Order(9)
     @DisplayName("Можно положить товар в корзину классической карточки товара ")
     public void classicAddToCart(){
         CatalogCard catalogCard = new CatalogCard();

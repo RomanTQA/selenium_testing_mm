@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14d55b5-4eee-45aa-a57f-9275eab04a07" name="Changes" comment="first commit">
+    <list default="true" id="c14d55b5-4eee-45aa-a57f-9275eab04a07" name="Changes" comment="small fix to slow down classic buy- unsync 50%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CoreSettings/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CoreSettings/TestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pages/PositiveBuyFlowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pages/PositiveBuyFlowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/BuyFlow/CatalogCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/BuyFlow/CatalogCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/BuyFlow/TradeCardClassic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/BuyFlow/TradeCardClassic.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.PositiveBuyFlowTest.classicAddToCart">
+  <component name="RunManager" selected="JUnit.PositiveBuyFlowTest">
     <configuration name="PositiveBuyFlowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_tests" />
       <extension name="coverage">
@@ -135,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PositiveBuyFlowTest.classicAddToCart" />
         <item itemvalue="JUnit.PositiveBuyFlowTest" />
+        <item itemvalue="JUnit.PositiveBuyFlowTest.classicAddToCart" />
         <item itemvalue="JUnit.PositiveBuyFlowTest.buySomething" />
         <item itemvalue="JUnit.PositiveBuyFlowTest.buyAndGoToModalCart" />
         <item itemvalue="JUnit.PositiveBuyFlowTest.makeFullOrder" />
@@ -160,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712641971103</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="small fix to slow down classic buy- unsync 50%">
+      <option name="closed" value="true" />
+      <created>1712642942164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712642942164</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +185,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="small fix to slow down classic buy- unsync 50%" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fix to slow down classic buy- unsync 50%" />
   </component>
 </project>
