@@ -55,8 +55,9 @@ abstract public class TestConfig {
     @AfterAll
     public static void tearDown() throws InterruptedException {
         System.out.println("Finish");
+        driver.close();
         driver.quit();       //закрыть сессию вебдрайвера
-         //driver.close();                 //закрыть окно (Tab) - у меня на драйвере работает также как и driver.quit()
+
 
     }
 
