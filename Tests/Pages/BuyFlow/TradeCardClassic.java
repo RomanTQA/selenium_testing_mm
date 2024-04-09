@@ -1,5 +1,6 @@
 package Pages.BuyFlow;
 
+import CoreSettings.Helpers;
 import CoreSettings.PageConfig;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,6 +16,7 @@ public class TradeCardClassic extends PageConfig {
         }
         public TradeCardClassic buyClassic(){
                 btnAddToCart.click();
+                Helpers.waitForChange();
                 return this;
         }
 }

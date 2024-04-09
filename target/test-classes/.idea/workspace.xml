@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14d55b5-4eee-45aa-a57f-9275eab04a07" name="Changes" comment="" />
+    <list default="true" id="c14d55b5-4eee-45aa-a57f-9275eab04a07" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +18,15 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Tests/TestConfig.java" root0="FORCE_HIGHLIGHTING" />
@@ -56,6 +67,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PositiveBuyFlowTest.buyAndGoToModalCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pages" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
+      <option name="METHOD_NAME" value="buyAndGoToModalCart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositiveBuyFlowTest.buySomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pages" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
+      <option name="METHOD_NAME" value="buySomething" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PositiveBuyFlowTest.classicAddToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_tests" />
       <extension name="coverage">
@@ -67,22 +110,6 @@
       <option name="PACKAGE_NAME" value="Pages" />
       <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
       <option name="METHOD_NAME" value="classicAddToCart" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositiveBuyFlowTest.mainPagePopularAddToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Pages" />
-      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
-      <option name="METHOD_NAME" value="mainPagePopularAddToCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,29 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveBuyFlowTest.modalFastViewAddToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Pages" />
-      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
-      <option name="METHOD_NAME" value="modalFastViewAddToCart" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PositiveBuyFlowTest" />
-        <item itemvalue="JUnit.PositiveBuyFlowTest.makeFullOrder" />
+        <item itemvalue="JUnit.PositiveBuyFlowTest.buySomething" />
         <item itemvalue="JUnit.PositiveBuyFlowTest.classicAddToCart" />
-        <item itemvalue="JUnit.PositiveBuyFlowTest.modalFastViewAddToCart" />
-        <item itemvalue="JUnit.PositiveBuyFlowTest.mainPagePopularAddToCart" />
+        <item itemvalue="JUnit.PositiveBuyFlowTest.buyAndGoToModalCart" />
+        <item itemvalue="JUnit.PositiveBuyFlowTest.makeFullOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +150,30 @@
       <option name="presentableId" value="Default" />
       <updated>1711973588438</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1712641971103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712641971103</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

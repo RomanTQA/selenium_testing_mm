@@ -1,5 +1,6 @@
 package Pages.BuyFlow;
 
+import CoreSettings.Helpers;
 import CoreSettings.PageConfig;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -66,6 +67,7 @@ public class CatalogCard extends PageConfig {  //каталог
         Actions actions = new Actions(driver);
         actions.moveToElement(tCard3).perform();
         itemName.click();
+        Helpers.waitForChange();
 
         return new TradeCardClassic();
     }
