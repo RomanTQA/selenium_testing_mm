@@ -2,16 +2,16 @@
 <module version="4">
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$" dumb="true">
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/target" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/classes" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/main" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes/archetype-resources" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/main" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/test" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/test/java" />
+      <excludeFolder url="file://$MODULE_DIR$/target/generated-test-sources/test-annotations" />
     </content>
   </component>
 </module>

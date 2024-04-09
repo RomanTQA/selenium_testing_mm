@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MainPage extends PageConfig {
 
-    private String mainURL = "https://master-mobile.dev.plastilin-art.ru/";
+    private final String mainURL = "https://master-mobile.dev.plastilin-art.ru/";
 //далее селекторы, с которыми работать на этом обьекте
     @FindBy(xpath = "//div[@class='row catalog-preview__row']/div[2]")
     private WebElement offerCard2;

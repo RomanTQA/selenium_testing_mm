@@ -40,7 +40,7 @@ public class TestData {
     }
 
     public void setTypeDelay(int typeDelay) {
-        this.typeDelay = typeDelay;
+        TestData.typeDelay = typeDelay;
     }
 
 
@@ -51,7 +51,7 @@ public class TestData {
     }
 
     public void setTestName(String testName) {
-        this.testName = testName;
+        TestData.testName = testName;
     }
 
     public static String getTestEmail() {
@@ -59,7 +59,7 @@ public class TestData {
     }
 
     public void setTestEmail(String testEmail) {
-        this.testEmail = testEmail;
+        TestData.testEmail = testEmail;
     }
 
     public static String getTestPhone() {
@@ -67,7 +67,7 @@ public class TestData {
     }
 
     public void setTestPhone(String testPhone) {
-        this.testPhone = testPhone;
+        TestData.testPhone = testPhone;
     }
 
     public static String getTestCity() {
@@ -75,7 +75,7 @@ public class TestData {
     }
 
     public void setTestCity(String testCity) {
-        this.testCity = testCity;
+        TestData.testCity = testCity;
     }
 
     public static String getTestAddress() {
@@ -83,7 +83,7 @@ public class TestData {
     }
 
     public void setTestAddress(String testAddress) {
-        this.testAddress = testAddress;
+        TestData.testAddress = testAddress;
     }
 
     public static String getTestPassword() {
@@ -91,6 +91,6 @@ public class TestData {
     }
 
     public void setTestPassword(String testPassword) {
-        this.testPassword = testPassword;
+        TestData.testPassword = testPassword;
     }
 }

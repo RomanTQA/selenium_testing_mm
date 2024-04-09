@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CatalogCard extends PageConfig {  //каталог
-    private String catalogURL = "https://master-mobile.dev.plastilin-art.ru/catalog/zapchasti_dlya_telefonov_1/podsvetki_displeev/";
+    private final String catalogURL = "https://master-mobile.dev.plastilin-art.ru/catalog/zapchasti_dlya_telefonov_1/podsvetki_displeev/";
     @FindBy(xpath = "//div[@class='catalog__type-block__row row']/div[3]")
     private WebElement tCard3;
 

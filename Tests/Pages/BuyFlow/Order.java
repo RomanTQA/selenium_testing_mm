@@ -14,7 +14,7 @@ import java.time.Duration;
 import java.util.function.Supplier;
 
 public class Order extends PageConfig {   //страница с формой ордера
-    private String orderURL = "https://master-mobile.ru/order/";
+    private final String orderURL = "https://master-mobile.ru/order/";
 
     public static WebElement getBtnConfirm() {
         return btnConfirm;
