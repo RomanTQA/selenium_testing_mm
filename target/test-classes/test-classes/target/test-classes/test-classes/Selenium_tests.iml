@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/main" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/classes/archetype-resources/src/test/java" isTestSource="true" />
+    </content>
+  </component>
+</module>
