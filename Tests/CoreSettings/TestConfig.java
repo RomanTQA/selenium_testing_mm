@@ -25,7 +25,7 @@ abstract public class TestConfig {
     public static void setUp(){
         //на свежих версиях хрома , где требуется бета-хромдрайвер - webdrivermanager не поможет, нужно инициализировать вручную.
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");            // инкогнито
+        //options.addArguments("--incognito");            // инкогнито
         options.addArguments("--disk-cache-size=0");   //отключить кэш
 
         driver = new ChromeDriver(options);    //инициализировали хромдрайвер

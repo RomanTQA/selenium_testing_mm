@@ -9,12 +9,16 @@ public class TestData {
 
     private static String testPassword = "B123456b";
 
+
+
+    private static String stringFakerFlag = "FakeTest";     //это для будущих тестов, чтобы искать по флагу сгенерированное
+
     private static int typeDelay = 20;    //для human-like инпута - задержка между вбиванием символов
     private static int updElemDelay = 250;   //тех пауза (мс) для апдейта состояния элемента движком страницы.
 
 
 
-    private static int waitForElem = 5000;   //тех интервал (мс) для ожидания элемента на странице
+    private static int waitForElem = 10000;   //тех интервал (мс) для ожидания элемента на странице
 
     public static int getWaitForElem() {
         return waitForElem;
@@ -93,4 +97,14 @@ public class TestData {
     public void setTestPassword(String testPassword) {
         TestData.testPassword = testPassword;
     }
+
+    public static String getStringFakerFlag() {
+        return stringFakerFlag;
+    }
+
+    public static void setStringFakerFlag(String stringFakerFlag) {
+        TestData.stringFakerFlag = stringFakerFlag;
+    }
+
+
 }

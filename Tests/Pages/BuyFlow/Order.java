@@ -76,14 +76,24 @@ public class Order extends PageConfig {   //страница с формой о�
         chkTerms.click();
         return this;
     }
-    public Order fillOrderFormRandom (){        //заполнить ордер сгенерированными рандомными данными
+    public Order fillOrderFormRandom (){   //заполнить ордер сгенерированными рандомными данными
+        Helpers.WebElemActions.customHoverAndClick(inputName);
         inputName.sendKeys(Helpers.generateName());
+
+        Helpers.WebElemActions.customHoverAndClick(inputEmail);
         inputEmail.sendKeys(Helpers.generateEmail());
+
+        Helpers.WebElemActions.customHoverAndClick(inputPhone);
         inputPhone.sendKeys(Helpers.generatePhone());
+
+        Helpers.WebElemActions.customInteractAndClear(inputCity);
         inputCity.sendKeys(TestData.getTestCity());
+
         deliverySDEK2.click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(2200));
-        wait.until(ExpectedConditions.visibilityOf(inputAddress));
+
+
+        Helpers.waitForChange();
+        inputAddress.click();
         inputAddress.sendKeys(Helpers.generateAddress());
         chkTerms.click();
         return this;
@@ -99,6 +109,11 @@ public class Order extends PageConfig {   //страница с формой о�
         Helpers.waitForChange();
         Helpers.WebElemActions.customInteractAndClear(inputCity);
         Helpers.typeHuman(inputCity, TestData.getTestCity(), TestData.getTypeDelay());
+        //попробую отдебажить плохой ввод телефона
+        if(inputPhone.getAttribute("class").contains("error")){
+            Helpers.WebElemActions.customHoverAndClick(inputPhone);
+            inputPhone.sendKeys("123");
+        }
         deliverySDEK2.click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(TestData.getWaitForElem()));
         wait.until(driver->Helpers.waitForElement(inputAddress));

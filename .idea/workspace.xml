@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c14d55b5-4eee-45aa-a57f-9275eab04a07" name="Changes" comment="cleaned the project from self-copying bug">
+    <list default="true" id="c14d55b5-4eee-45aa-a57f-9275eab04a07" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/Tests/Pages/Auth/LKPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Pages/Auth/TempMailPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Pages/PositiveRegFlowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/CoreSettings/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/CoreSettings/Helpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/CoreSettings/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/CoreSettings/TestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/CoreSettings/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/CoreSettings/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pages/Auth/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pages/Auth/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pages/Auth/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pages/Auth/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pages/BuyFlow/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pages/BuyFlow/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pages/BuyFlow/OrderComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pages/BuyFlow/OrderComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Pages/BuyFlow/TradeCardClassic.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Pages/BuyFlow/TradeCardClassic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +39,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="25d5bbd4-0a47-45e1-bf5d-8591e39531d5" />
+        <option name="url" value="https://github.com/RomanTQA/selenium_testing_mm.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Tests/TestConfig.java" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -45,7 +68,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/admin/IdeaProjects/Selenium_tests/target/classes/$failedteste&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/IdeaProjects/GUnitTestsMaven&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/IdeaProjects/Selenium_tests&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -56,23 +79,23 @@
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.PositiveBuyFlowTest">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PositiveRegFlowTest">
+    <configuration name="PositiveRegFlowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="$failedteste.*" />
+          <option name="PATTERN" value="Pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="$failedteste" />
-      <option name="MAIN_CLASS_NAME" value="$failedteste.AppTest" />
+      <option name="PACKAGE_NAME" value="Pages" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveRegFlowTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveBuyFlowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositiveRegFlowTest.CheckEmails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_tests" />
       <extension name="coverage">
         <pattern>
@@ -81,29 +104,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Pages" />
-      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositiveBuyFlowTest.buySomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selenium_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Pages" />
-      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
-      <option name="METHOD_NAME" value="buySomething" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveRegFlowTest" />
+      <option name="METHOD_NAME" value="CheckEmails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveBuyFlowTest.classicAddToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositiveRegFlowTest.doTestAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_tests" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +120,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Pages" />
-      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
-      <option name="METHOD_NAME" value="classicAddToCart" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveRegFlowTest" />
+      <option name="METHOD_NAME" value="doTestAuth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveBuyFlowTest.fillTheOrderRND" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositiveRegFlowTest.regTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium_tests" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +136,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Pages" />
-      <option name="MAIN_CLASS_NAME" value="Pages.PositiveBuyFlowTest" />
-      <option name="METHOD_NAME" value="fillTheOrderRND" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveRegFlowTest" />
+      <option name="METHOD_NAME" value="regTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositiveRegFlowTest.regThroughBuyItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pages" />
+      <option name="MAIN_CLASS_NAME" value="Pages.PositiveRegFlowTest" />
+      <option name="METHOD_NAME" value="regThroughBuyItem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PositiveBuyFlowTest" />
-        <item itemvalue="JUnit.PositiveBuyFlowTest.fillTheOrderRND" />
-        <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.PositiveBuyFlowTest.classicAddToCart" />
-        <item itemvalue="JUnit.PositiveBuyFlowTest.buySomething" />
+        <item itemvalue="JUnit.PositiveRegFlowTest" />
+        <item itemvalue="JUnit.PositiveRegFlowTest.doTestAuth" />
+        <item itemvalue="JUnit.PositiveRegFlowTest.regThroughBuyItem" />
+        <item itemvalue="JUnit.PositiveRegFlowTest.regTest" />
+        <item itemvalue="JUnit.PositiveRegFlowTest.CheckEmails" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712654240312</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <option name="closed" value="true" />
+      <created>1712655909060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712655909060</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +237,7 @@
     <MESSAGE value="small fix to slow down classic buy- unsync 50%" />
     <MESSAGE value="new annotation @Order implemented to perform tests in order" />
     <MESSAGE value="cleaned the project from self-copying bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned the project from self-copying bug" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

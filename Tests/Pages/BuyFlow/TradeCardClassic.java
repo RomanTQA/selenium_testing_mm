@@ -15,6 +15,7 @@ public class TradeCardClassic extends PageConfig {
                 PageFactory.initElements(driver, this);
         }
         public TradeCardClassic buyClassic(){
+                Helpers.waitForChange();
                 btnAddToCart.click();
                 Helpers.waitForChange();
                 return this;

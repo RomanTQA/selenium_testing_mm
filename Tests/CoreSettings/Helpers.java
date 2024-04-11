@@ -66,7 +66,7 @@ public class Helpers  {
     }
 
     public static String generateName(){       //генерация имени через faker
-        String rndName = faker.name().fullName();
+        String rndName = TestData.getStringFakerFlag() + faker.name().fullName();
         return rndName;
     }
 
