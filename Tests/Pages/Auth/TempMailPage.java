@@ -71,4 +71,8 @@ public class TempMailPage extends PageConfig {
         driver.switchTo().window(newTab.get(0));
         return new RegistrationPage();
     }
+    public RegistrationPage closeCurrentTab(){
+        driver.close();
+        return new RegistrationPage();
+    }
 }

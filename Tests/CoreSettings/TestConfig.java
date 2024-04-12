@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
+import java.lang.module.Configuration;
 import java.util.concurrent.TimeUnit;
 
 abstract public class TestConfig {
@@ -26,10 +27,16 @@ abstract public class TestConfig {
         //на свежих версиях хрома , где требуется бета-хромдрайвер - webdrivermanager не поможет, нужно инициализировать вручную.
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("--incognito");            // инкогнито
-        options.addArguments("--disk-cache-size=0");   //отключить кэш
-
+     //   options.addArguments("--disk-cache-size=0");   //отключить кэш
+        options.addArguments("--headless"); // Запуск браузера в headless режиме
+      //  options.addArguments("--disable-gpu"); // Необходимо в headless окружении
+     //   options.addArguments("--no-sandbox"); // Необходимо в headless окружении
+     //   options.addArguments("--disable-dev-shm-usage"); // Необходимо в headless окружении
+      //  options.addArguments("--disable-web-security");
+       // options.addArguments("--ignore-certificate-errors");
+          options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);    //инициализировали хромдрайвер
-        driver.manage().window().maximize();   //развернули окно браузера на весь экран
+      //  driver.manage().window().maximize();   //развернули окно браузера на весь экран
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS); //загрузка страницы не более 15с
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  //ожидание элемента не более 15с
 
@@ -46,8 +53,8 @@ abstract public class TestConfig {
     public  void afterEach(){
         deleteAllCookies(driver);  //удаление всех куков
         Actions actions = new Actions(driver);
-
         actions.sendKeys(Keys.LEFT_CONTROL + "w").perform(); //эмуляция закрытия окна контрол+W
+      //  driver.close();
 
     }
 

@@ -64,12 +64,9 @@ public class PositiveRegFlowTest extends TestConfig {
         tmpMail.switchBackToReg()
                         .setTemporaryEmail();
 
-
-
         Assertions.assertAll("value really copied",
                 ()-> Assertions.assertFalse((RegistrationPage.getRegEmail().getAttribute("value").contains("..."))),
                 ()-> Assertions.assertEquals(tempMailVal, (RegistrationPage.getRegEmail().getAttribute("value"))));
-
 
     }
     @Test

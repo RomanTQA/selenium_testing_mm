@@ -34,8 +34,9 @@ public class PositiveBuyFlowTest extends TestConfig {
     public void buySomething()  {
         CatalogCard tradeCard = new CatalogCard();
         tradeCard.buyThing();
-        WebElement hCartValueIcon = CatalogCard.gethCartValueIcon();
         Helpers.waitForChange();
+        WebElement hCartValueIcon = CatalogCard.gethCartValueIcon();
+
         assertAll("Check cart value",
                 () -> Assertions.assertTrue(hCartValueIcon.getAttribute("class").contains("nav-tabs__item-value--active"),
                         "Class 'active' not found"),
@@ -51,6 +52,7 @@ public class PositiveBuyFlowTest extends TestConfig {
         CatalogCard tradeCard = new CatalogCard();
         tradeCard.buyThing()
                .goToHeaderCart();
+        Helpers.waitForChange();
         Assertions.assertAll("check for elements: ",
                 () -> Assertions.assertTrue(ModalCart.getBtnGoToCart().isDisplayed(),
                         "No go to cart button visible, modal is not open"),
@@ -66,6 +68,7 @@ public class PositiveBuyFlowTest extends TestConfig {
         tradeCard.buyThing()
                 .goToHeaderCart()
                 .goToBaseCart();
+        Helpers.waitForChange();
         Assertions.assertAll("check for elements: ",
                 () -> Assertions.assertTrue(driver.getCurrentUrl().contains("basket"),
                         "url does not  contain basket"),
@@ -88,6 +91,7 @@ public class PositiveBuyFlowTest extends TestConfig {
                 .goToHeaderCart()
                 .goToBaseCart()
                 .goToOrder();
+        Helpers.waitForChange();
         Assertions.assertTrue(driver.getCurrentUrl().contains("order"),
                 "url does not contain /order/");
 
@@ -104,6 +108,7 @@ public class PositiveBuyFlowTest extends TestConfig {
                 .goToBaseCart()
                 .goToOrder()
                 .fillOrderHuman();
+        Helpers.waitForChange();
         Assertions.assertTrue(Order.getParentOfBtnConfirm()
                 .getAttribute("class")
                 .contains("order-details__buttons--active"), "Button Confirm is not clickable");
@@ -122,6 +127,7 @@ public class PositiveBuyFlowTest extends TestConfig {
                 .fillOrderHuman()
                 .makeOrder();*/
         CatalogCard.makeOrderBasic();
+        Helpers.waitForChange();
         Assertions.assertAll("is the order formed: ",
                 () -> Assertions.assertTrue(OrderComplete.orderText().contains("успешно оформлен"), "No  Order success message"),
                 () -> Assertions.assertTrue(OrderComplete.titleNavText().contains("Заказ сформирован"), "No success Order message")
@@ -134,6 +140,7 @@ public class PositiveBuyFlowTest extends TestConfig {
     public void mainPagePopularAddToCart(){
         MainPage mainPage = new MainPage();
         mainPage.addToCartPopular();
+        Helpers.waitForChange();
         WebElement hCartValueIcon = CatalogCard.gethCartValueIcon();
         Helpers.waitForChange();
         assertAll("Check cart value",
@@ -152,6 +159,7 @@ public class PositiveBuyFlowTest extends TestConfig {
         MainPage mainPage = new MainPage();
         mainPage.addToCartFast()
                 .buyFromFastView();
+        Helpers.waitForChange();
         WebElement hCartValueIcon = CatalogCard.gethCartValueIcon();
         Helpers.waitForChange();
         assertAll("Check cart value",
@@ -169,6 +177,7 @@ public class PositiveBuyFlowTest extends TestConfig {
         CatalogCard catalogCard = new CatalogCard();
         catalogCard.buyClassicBuy()
                 .buyClassic();
+        Helpers.waitForChange();
         WebElement hCartValueIcon = CatalogCard.gethCartValueIcon();
         Helpers.waitForChange();
         assertAll("Check cart value",
