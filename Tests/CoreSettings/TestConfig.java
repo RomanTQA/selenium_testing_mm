@@ -36,7 +36,7 @@ abstract public class TestConfig {
        // options.addArguments("--ignore-certificate-errors");
           options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);    //инициализировали хромдрайвер
-      //  driver.manage().window().maximize();   //развернули окно браузера на весь экран
+        //driver.manage().window().maximize();   //развернули окно браузера на весь экран
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS); //загрузка страницы не более 15с
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  //ожидание элемента не более 15с
 

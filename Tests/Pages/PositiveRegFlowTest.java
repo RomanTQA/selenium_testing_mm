@@ -61,12 +61,15 @@ public class PositiveRegFlowTest extends TestConfig {
         TempMailPage tmpMail = new TempMailPage();
         tmpMail.copyTempEmail();
         tempMailVal = TempMailPage.saveValueOFMail();
-        tmpMail.switchBackToReg()
-                        .setTemporaryEmail();
-
+        tmpMail.switchBackToReg();
+        Helpers.waitForChange();
+        WebElement filledEmail = RegistrationPage.getRegEmail();
+        filledEmail.sendKeys(tempMailVal);
+        RegistrationPage.getFocusDropper().click();        //
+        Helpers.waitForChange();
         Assertions.assertAll("value really copied",
-                ()-> Assertions.assertFalse((RegistrationPage.getRegEmail().getAttribute("value").contains("..."))),
-                ()-> Assertions.assertEquals(tempMailVal, (RegistrationPage.getRegEmail().getAttribute("value"))));
+                ()-> Assertions.assertFalse(filledEmail.getAttribute("value").contains("...")),
+                ()-> Assertions.assertEquals(tempMailVal, (filledEmail.getAttribute("value"))));
 
     }
     @Test
@@ -74,13 +77,22 @@ public class PositiveRegFlowTest extends TestConfig {
     @org.junit.jupiter.api.Order(2)
     public void regTest()  {
         driver.get(RegistrationPage.getRegURL());
+
         RegistrationPage regPage = new RegistrationPage();
         regPage.goToTempMailTab()
-                        .copyTempEmail()
-                                .switchBackToReg()
+                        .copyTempEmail();
+                     /*           .switchBackToReg()
                                         .setTemporaryEmail()
                                                 .fillAllButEmail()
-                                                        .DoRegistration();
+                                                        .DoRegistration();*/
+        String tempMailVal =  TempMailPage.saveValueOFMail();
+        TempMailPage tmpMail = new TempMailPage();
+        tmpMail.switchBackToReg()
+                .fillEmailFromString(tempMailVal)
+                .fillAllButEmail()
+                .DoRegistration();
+        Helpers.waitForChange();
+
         Assertions.assertTrue(driver.getCurrentUrl().contains("personal"));
 
 
@@ -90,6 +102,7 @@ public class PositiveRegFlowTest extends TestConfig {
     @org.junit.jupiter.api.Order(3)
     public void regThroughBuyItem(){
         CatalogCard.makeOrderBasic();
+        Helpers.waitForChange();
         WebElement nameContainer = OrderComplete.getNameContainer();
         Helpers.waitForChange();
         Assertions.assertTrue(nameContainer.isDisplayed());

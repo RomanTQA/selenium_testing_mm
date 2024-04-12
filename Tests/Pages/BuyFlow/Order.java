@@ -109,7 +109,7 @@ public class Order extends PageConfig {   //страница с формой о�
         Helpers.waitForChange();
         Helpers.WebElemActions.customInteractAndClear(inputCity);
         Helpers.typeHuman(inputCity, TestData.getTestCity(), TestData.getTypeDelay());
-        //попробую отдебажить плохой ввод телефона
+        //попробую отдебажить плохой ввод телефона  //коооостыли
         if(inputPhone.getAttribute("class").contains("error")){
             Helpers.WebElemActions.customHoverAndClick(inputPhone);
             inputPhone.sendKeys("123");

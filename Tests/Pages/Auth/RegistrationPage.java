@@ -59,9 +59,13 @@ public class RegistrationPage extends PageConfig {
     @FindBy(xpath = "//input[@type='submit'][@name='register_submit_button']")
     private static WebElement btn_SubmitReg;
 
+    public static WebElement getFocusDropper() {
+        return focusDropper;
+    }
+
     //фокус-дроппер
     @FindBy (xpath = "//div[@class='recipient__form-item']/label[contains(text(), 'почтовый ящик')]")
-    private WebElement focusDropper;
+    private static WebElement focusDropper;
     @FindBy(xpath = "//body")
     private WebElement body;
 
@@ -96,13 +100,26 @@ public class RegistrationPage extends PageConfig {
 
     }
 
-    public   RegistrationPage setTemporaryEmail(){
+    public   RegistrationPage setTemporaryEmail(){                      //то все замечательно, но контрол + V не работает в Headless режиме
         Helpers.WebElemActions.customHoverAndClick(regEmail);
         regEmail.sendKeys(Keys.LEFT_CONTROL + "v");
         Helpers.waitForChange();
         focusDropper.click();
         return this;
     }
+    public   RegistrationPage setTemporaryEmailSimple(){      //то все замечательно, но контрол + V не работает в Headless режиме
+        //Helpers.WebElemActions.customHoverAndClick(regEmail);
+        Helpers.waitForChange();
+        regEmail.sendKeys(Keys.LEFT_CONTROL + "v");
+        Helpers.waitForChange();
+       // focusDropper.click();
+        return this;
+    }
+    public RegistrationPage fillEmailFromString(String emailVal){
+        regEmail.sendKeys(emailVal);
+        return this;
+    }
+
 
     public LKPage DoRegistration(){
         Helpers.WebElemActions.customHoverAndClick(btn_SubmitReg);

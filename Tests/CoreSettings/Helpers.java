@@ -2,10 +2,7 @@ package CoreSettings;
 
 import CoreSettings.PageConfig;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -115,6 +112,7 @@ public class Helpers  {
     }
 
     public  class WebElemActions  extends Helpers{
+
 
         public static void customInteractAndClear(WebElement webElement){   //для медленного железа - как хуман-навел курсор, кликнул, очистил содержимое инпута перед новым вводом.
         Actions actions = new Actions(driver);
